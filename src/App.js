@@ -3,17 +3,18 @@ import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
 // import Routes, Route dan Link pada react-router-dom
 import { Routes, Route, Link } from "react-router-dom";
+import CustomForm from "./components/CustomForm";
 
 function App() {
   // // Membuat State
   // // asumsi hanya ada first dan second
-  // const [position, setPosition] = useState("first");
+  // // const [position, setPosition] = useState("first");
   // // Membuat handler onClick
-  // const handlerClick = (event, position) => {
-  //   // mencegah refresh page dengan event dan disertai dengan preventDefault
-  //   event.preventDefault();
-  //   setPosition(position);
-  // };
+  // // const handlerClick = (event, position) => {
+  // // mencegah refresh page dengan event dan disertai dengan preventDefault
+  // // event.preventDefault();
+  // // setPosition(position);
+  // // };
 
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
         {/* Dibawah digunakan untuk component Home (Hanya untuk pembelajaran)*/}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="formulir" element={<CustomForm />} />
       </Routes>
 
       {/* Membuat navbar sederhana
@@ -57,6 +59,7 @@ function Home() {
       </main>
       <nav>
         <Link to="/about">About</Link>
+        <Link to="/formulir">Formulir</Link>
       </nav>
     </>
   );
