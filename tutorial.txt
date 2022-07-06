@@ -1,0 +1,16 @@
+1. Membuat component
+2. Membuat conditional rendering
+3. Membuat state
+4. Membuat PreventDefault
+5. Instalasi react-router-dom
+a. Import React Router dom didalam index.js pada folder src dengan cara :
+import { BrowserRouter } from "react-router-dom";
+b. Membungkus elemen fragment dan component <App /> dengan BrowserRouter
+c. Mendifinisikan route nya terlebih dahulu menggunakan Link, Routes, dan Route
+Link : sebagai anchor seperti tag <a></a>
+Routes : sebagai main routernya
+Route : sebagai sub dan rutenya
+6. Menggunakan Routes, Route dan Link pada App.js pada src
+a. Mendiskripsikan Routenya atau jalur rute nya
+b. Menerima atribute dengan path dan elementnya itu berarti jika path sebagai rute misal kan local:3000/ itu akan menampilkan komponen apa? */}
+example : <Route path="/" element={<></>} />
